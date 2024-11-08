@@ -1,8 +1,12 @@
-FROM openjdk:17-oracle
+   FROM node:18-alpine
 
-USER root
+   WORKDIR /app
 
-COPY ./config.json /config.json
-COPY ./target/ds-lab01-1.0-SNAPSHOT-jar-with-dependencies.jar /httpserv/ds-lab01-1.0-SNAPSHOT-jar-with-dependencies.jar
+   COPY package.json yarn.lock ./
+   RUN yarn install
 
-ENTRYPOINT ["java", "-jar", "./httpserv/ds-lab01-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+   COPY . .
+
+   CMD ["yarn", "start"]
+   
+
