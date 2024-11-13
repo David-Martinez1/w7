@@ -82,7 +82,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: agarmirus/ds-lab1-app:latest
+          tags: chenzongquan/myapp:latest
       
       - name: Deploy app to host
         uses: appleboy/ssh-action@v1.0.3
