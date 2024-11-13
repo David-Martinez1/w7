@@ -92,7 +92,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SERVER_SSH_PSWD }}
           script: >-
-            sudo docker pull agarmirus/ds-lab1-app:latest &&
+            sudo docker pull chenzpngquan/ds-lab1-app:latest &&
             (sudo docker stop httpserv && sudo docker rm httpserv || true) &&
             sudo docker run --network host --name httpserv --restart always -d agarmirus/ds-lab1-app:latest
       
