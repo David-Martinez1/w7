@@ -56,7 +56,7 @@ public class PostgresPersonDAOTest
         String jsonString = readConfigFile("config.json");
         JSONObject jsonObject = new JSONObject(jsonString);
 
-        connStr = jsonObject.getString("conn");
+        connStr = jsonObject.getString("connts");
         conn = DriverManager.getConnection(connStr, "postgres", "postgres");
         dao = new PostgresPersonDAO(connStr, "postgres", "postgres");
     }
