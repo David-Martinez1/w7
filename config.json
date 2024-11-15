@@ -1,5 +1,5 @@
 {
-    "conn": "jdbc:postgresql://dpg-csrl8t56l47c73fgunbg-a/pg13_dnsx/postgres",
+    "conn": "jdbc:postgresql://dpg-csrl8t56l47c73fgunbg-a.oregon-postgres.render.com/postgres?ssl=true&currentSchema=pg13_dnsx",
     "connts": "jdbc:postgresql://localhost:5432/postgres",
     "port": 8080
 }
