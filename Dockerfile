@@ -22,8 +22,8 @@ FROM openjdk:17-alpine
 WORKDIR /app
 
 # 从 builder 镜像中复制构建好的 JAR 文件到运行时镜像
-COPY --from=builder /app/target/${JAR_FILE}.jar /app/app.jar
-COPY ./config.json /config.json
+COPY --from=builder /app/target/*.jar /app/app.jar
+COPY ./config.json /app/config.json
 
 # 暴露应用端口（通常 Spring Boot 默认端口为 8080）
 EXPOSE 8080
