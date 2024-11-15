@@ -1,5 +1,5 @@
 {
-    "conn": "jdbc:postgresql://pg13_dnsx_user:uaft79uPBDx0cotaUGZGRXCLR9Sia0gs@dpg-csrl8t56l47c73fgunbg-a/pg13_dnsx/postgres",
+    "conn": "jdbc:postgresql://dpg-csrl8t56l47c73fgunbg-a/pg13_dnsx/postgres",
     "connts": "jdbc:postgresql://localhost:5432/postgres",
     "port": 8080
 }
