@@ -1,4 +1,5 @@
 {
-    "conn": "jdbc:postgresql://localhost:5432/postgres",
+    "conn": "jdbc:postgresql://task1_9rmg_user:h1Krvw800f1BV55JinTGNnWu5982Zi9f@dpg-csf0cpggph6c73eudia0-a/task1_9rmg",
+    
     "port": 8080
 }
