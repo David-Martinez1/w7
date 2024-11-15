@@ -48,7 +48,7 @@ public class App
             String connStr = jsonObject.getString("conn");
             Integer port = jsonObject.getInt("port");
 
-            IDAO<Person> personDAO = new PostgresPersonDAO(connStr, "postgres", "postgres");
+            IDAO<Person> personDAO = new PostgresPersonDAO(connStr, "pg13_dnsx_user", "uaft79uPBDx0cotaUGZGRXCLR9Sia0gs");
             IModel personModel = new PersonModel(personDAO);
             IController personController = new PersonController(personModel, port);
         }
