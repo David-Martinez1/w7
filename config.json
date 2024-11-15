@@ -1,5 +1,5 @@
 {
-    "conn": "jdbc:postgresql://task1_9rmg_user:h1Krvw800f1BV55JinTGNnWu5982Zi9f@dpg-csf0cpggph6c73eudia0-a/task1_9rmg",
+    "conn": "jdbc:postgresql://pg13_dnsx_user:uaft79uPBDx0cotaUGZGRXCLR9Sia0gs@dpg-csrl8t56l47c73fgunbg-a/pg13_dnsx/postgres",
     
     "port": 8080
 }
