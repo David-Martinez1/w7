@@ -1,5 +1,5 @@
 # 使用官方的 OpenJDK 17 镜像作为基础镜像
-FROM openjdk:17-alpine as builder
+FROM maven:3.9.9-amazoncorretto-17-alpine as builder
 
 USER root
 
