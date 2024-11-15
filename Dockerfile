@@ -1,5 +1,5 @@
 # 使用官方的 OpenJDK 17 镜像作为基础镜像
-FROM openjdk:17-jdk-slim as builder
+FROM openjdk:17-alpine as builder
 
 USER root
 
@@ -20,7 +20,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # 使用 JRE 运行时环境作为运行镜像
-FROM openjdk:17-jre-slim
+FROM openjdk:17-alpine
 
 # 设置工作目录
 WORKDIR /app
